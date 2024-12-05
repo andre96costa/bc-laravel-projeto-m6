@@ -13,7 +13,12 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
-    <body class="min-h-screen w-full flex items-center">
-        {{ $slot }}
+    <body class="min-h-screen w-full flex items-start">
+        <div class="content flex w-full px-12">
+            <x-header 
+                logo="logo.png"
+            > </x-header>
+            {{ $slot }}
+        </div>
     </body>
 </html>
